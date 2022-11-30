@@ -5,10 +5,8 @@ import css from './ContactForm.module.css';
 
 export class ContactForm extends Component {
   static propTypes = {
-    state: PropTypes.exact({
-      name: PropTypes.string.isRequired,
-      number: PropTypes.string.isRequired,
-    }),
+    onSubmit: PropTypes.func.isRequired,
+    onCheck: PropTypes.func.isRequired,
   };
   state = {
     name: '',
